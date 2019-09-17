@@ -53,3 +53,9 @@ dkms.conf
 
 # Project Settings
 t/servroot
+app/logs/
+app/client_body_temp/
+app/fastcgi_temp/
+app/proxy_temp/
+app/scgi_temp/
+app/uwsgi_temp/
