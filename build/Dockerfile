@@ -6,14 +6,11 @@ MAINTAINER longjun.wang@qq.com
 
 ARG OPENRESTY_VERSION=1.15.8.2
 
-# curl --- download purpose
-# make gcc build-essential libpcre3-dev libssl-dev perl zlib1g-dev --- build openresty
+# download purpose ---> curl
+# build purpose ---> make gcc build-essential libpcre3-dev libssl-dev perl zlib1g-dev
 RUN apt-get update && \
     apt-get install -y curl make gcc && \
-    apt-get install -y build-essential libpcre3-dev libssl-dev perl
-
-# FIX
-RUN apt-get install -y zlib1g-dev
+    apt-get install -y build-essential libpcre3-dev libssl-dev perl zlib1g-dev
 
 # install OpenResty
 RUN cd /tmp && \
