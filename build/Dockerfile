@@ -20,6 +20,9 @@ RUN cd /tmp && \
     ./configure && \
     make install
 
+#install test:nginx
+RUN cpan -f -i Test::Nginx
+
 RUN ln -sf /dev/stdout /usr/local/openresty/nginx/logs/access.log && \
     ln -sf /dev/stderr /usr/local/openresty/nginx/logs/error.log
 
