@@ -1,0 +1,11 @@
+
+module test
+{
+	struct info
+	{
+		0 required unsigned int id;
+		1 optional string name;
+		2 optional vector<unsigned int> changes;
+		3 optional map<string, unsigned int> scores;
+	};
+};
