@@ -49,9 +49,11 @@ RUN /usr/local/openresty/luajit/bin/luarocks install lua-resty-busted && \
     /usr/local/openresty/luajit/bin/luarocks install busted 2.0.0-1 && \
     /usr/local/openresty/luajit/bin/luarocks remove --force busted 2.0.rc11
 
-# sdp
+# sdp lpack
 COPY external/sdp /tmp/sdp
 RUN cd /tmp/sdp && /usr/local/openresty/luajit/bin/luarocks make
+COPY external/lpack /tmp/lpack
+RUN cd /tmp/lpack && /usr/local/openresty/luajit/bin/luarocks make
 
 # Add additional binaries into PATH for convenience
 ENV PATH=$PATH:/usr/local/openresty/luajit/bin:/usr/local/openresty/nginx/sbin:/usr/local/openresty/bin
