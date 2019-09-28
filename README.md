@@ -26,6 +26,7 @@ Reference
 * [Awesome Resty](https://github.com/bungle/awesome-resty#testing-and-profiling)
 * [Test Nginx](https://github.com/openresty/test-nginx)
 * [OpenResty Busted](https://github.com/thibaultcha/lua-resty-busted)
+* [Lapis](https://leafo.net/lapis/reference.html)
 
 [Back to TOC](#table-of-contens)
 
