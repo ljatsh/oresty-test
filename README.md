@@ -16,6 +16,7 @@ Refer to build/Dockerfile
 * Nginx Test to perform application check
 * busted:
   * 默认的busted版本并不合适，参考Dockerfile手动绑定最新的版本
+* lapis 1.7.0
 
 [Back to TOC](#table-of-contens)
 

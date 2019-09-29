@@ -55,6 +55,9 @@ RUN cd /tmp/sdp && /usr/local/openresty/luajit/bin/luarocks make
 COPY external/lpack /tmp/lpack
 RUN cd /tmp/lpack && /usr/local/openresty/luajit/bin/luarocks make
 
+# lapis
+RUN /usr/local/openresty/luajit/bin/luarocks install lapis
+
 # Add additional binaries into PATH for convenience
 ENV PATH=$PATH:/usr/local/openresty/luajit/bin:/usr/local/openresty/nginx/sbin:/usr/local/openresty/bin
 
